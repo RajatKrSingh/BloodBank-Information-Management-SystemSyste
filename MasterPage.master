@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Blood Bank</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <header>
+		<div class="container text-center">
+			<div class="fh5co-navbar-brand">
+				<a class="fh5co-logo" href="index.aspx">Blood Bank</a>
+			</div>
+			<nav id="fh5co-main-nav" role="navigation">
+				<ul>
+					<li><a href="Index_Content.aspx">Home</a></li>
+					<li><a href="Register_Content.aspx">Register</a></li>
+					
+					<li><a href="PostRequirements_Content.aspx" class="active">Find Donor</a></li>
+					<li><a href="About_Content.aspx">About</a></li>
+                    <li><a href="Logout_Content.aspx">LogOut</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
